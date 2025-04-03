@@ -1,4 +1,4 @@
-# 免费Clash|V2ray机场订阅 | 4月3日18.3M/S|免费Clash/SSR/Shadowrocket/V2ray订阅节点  更新时间 2025-04-03 15:48:21
+# 免费Clash|V2ray机场订阅 | 4月3日19.2M/S|免费Clash/Shadowrocket/SSR/V2ray订阅节点  更新时间 2025-04-03 15:51:44
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://v2rayfreeclash.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
