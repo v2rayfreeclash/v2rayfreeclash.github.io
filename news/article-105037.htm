@@ -1,0 +1,401 @@
+<!doctype html>
+<html xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://v2rayfreeclash.github.io/news/article-105037.htm" />
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>完美配置：Mac上Clash局域网代理全面指南</title>
+        <meta name="description" content="在数字化时代，网络环境变得越来越复杂，尤其是对于那些需要频繁跨越地域限制，或在局域网内共享资源的用户来说，使用高效且灵活的代理工具尤为重要。Clash 作为一款强大的代理工具，凭借其出色的灵活性和稳定" />
+        <link rel="icon" href="/assets/website/img/clashxv2ray/favicon.ico" type="image/x-icon"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="author" content="免费Clash|V2ray机场订阅中文网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://v2rayfreeclash.github.io/news/article-105037.htm" />
+    <meta property="og:site_name" content="免费Clash|V2ray机场订阅中文网" />
+    <meta property="og:title" content="完美配置：Mac上Clash局域网代理全面指南" />
+    <meta property="og:image" content="https://v2rayfreeclash.github.io/uploads/20250131/8b787864489d11658ea67a95ee92b995.webp" />
+        <meta property="og:release_date" content="2025-04-26T07:40:59" />
+    <meta property="og:updated_time" content="2025-04-26T07:40:59" />
+        <meta property="og:description" content="在数字化时代，网络环境变得越来越复杂，尤其是对于那些需要频繁跨越地域限制，或在局域网内共享资源的用户来说，使用高效且灵活的代理工具尤为重要。Clash 作为一款强大的代理工具，凭借其出色的灵活性和稳定" />
+    
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="完美配置：Mac上Clash局域网代理全面指南">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+
+    <link href="/assets/website/css/clashxv2ray/css2-Sofia_swap.css" rel="stylesheet">
+    <!-- CSS here -->
+    <link rel="stylesheet" href="/assets/website/css/clashxv2ray/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/website/css/clashxv2ray/animate.min.css">
+    <link rel="stylesheet" href="/assets/website/css/clashxv2ray/swiper.min.css">
+    <link rel="stylesheet" href="/assets/website/css/clashxv2ray/magnific-popup.css">
+    <link rel="stylesheet" href="/assets/website/css/clashxv2ray/fontawesome-pro.css">
+    <link rel="stylesheet" href="/assets/website/css/clashxv2ray/spacing.css">
+    <link rel="stylesheet" href="/assets/website/css/clashxv2ray/custom-font.css">
+    <link rel="stylesheet" href="/assets/website/css/clashxv2ray/main.css">
+    <link rel="stylesheet" href="/assets/website/css/G.css" />
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PT713HZN6R"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PT713HZN6R');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854"
+     crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+
+    <!-- preloader start -->
+    <div id="preloader">
+        <div class="preloader-close">x</div>
+        <div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
+        </div>
+    </div>
+    <!-- preloader start -->
+    <!-- Backtotop start -->
+    <div class="backtotop-wrap cursor-pointer">
+        <svg class="backtotop-circle svg-content" width="100%" height="100%" viewbox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+        </svg>
+    </div>
+    <!-- Backtotop end -->
+    <!-- Offcanvas area start -->
+    <div class="fix">
+        <div class="offcanvas__area">
+            <div class="offcanvas__wrapper">
+                <div class="offcanvas__content">
+                    <div class="offcanvas__top d-flex justify-content-between align-items-center">
+                        <div class="offcanvas__logo">
+                            <a href="/" class="xcblog-blog-logo">
+                                <span>免费V2ray机场</span>
+                            </a>
+                        </div>
+                        <div class="offcanvas__close">
+                            <button class="offcanvas-close-icon animation--flip">
+                                <span class="offcanvas-m-lines">
+                                    <span class="offcanvas-m-line line--1"></span><span class="offcanvas-m-line line--2"></span><span class="offcanvas-m-line line--3"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mobile-menu fix"></div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas__overlay"></div>
+    <div class="offcanvas__overlay-white"></div>
+    <!-- Offcanvas area start -->
+    <!-- Header area start -->
+    <header>
+        <div id="header-sticky" class="header__area header-1">
+            <div class="container">
+                <div class="mega__menu-wrapper p-relative">
+                    <div class="header__main">
+                        <div class="header__left">
+                            <div class="header__logo">
+                                <div class="logo">
+                                    <a href="/" class="xcblog-blog-logo">
+                                                                                <span>免费V2ray机场</span>
+                                                                            </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__middle">
+                            <div class="mean__menu-wrapper d-none d-lg-block">
+                                <div class="main-menu">
+                                    <nav id="mobile-menu">
+                                        <ul>
+                                                                                        <li>
+                                                <a href="/">首页</a>
+                                            </li>
+                                                                                        <li>
+                                                <a href="/paid-subscribe/">推荐机场</a>
+                                            </li>
+                                                                                        <li>
+                                                <a href="/news/">新闻资讯</a>
+                                            </li>
+                                                                                        <li>
+                                                <a href="/client.htm">客户端</a>
+                                            </li>
+                                                                                    </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__right">
+                            <div class="header__action d-flex align-items-center">
+                                <div class="header__hamburger ml-20 d-lg-none">
+                                    <div class="sidebar__toggle">
+                                        <button class="bar-icon">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Header area end -->
+
+<div id="popup-search-box">
+    <div class="box-inner-wrap d-flex align-items-center">
+        <form id="form" action="#" method="get" role="search">
+            <input id="popup-search" type="text" name="s" placeholder="Type keywords here...">
+        </form>
+        <div class="search-close"><i class="fa-sharp fa-regular fa-xmark"></i></div>
+    </div>
+</div>
+<!-- Header area end -->
+
+<!-- Body main wrapper start -->
+<main>
+
+    <div class="breadcrumb__area breadcrumb-space overflow-hidden banner-home-bg ">
+        <div class="banner-home__middel-shape inner-top-shape"></div>
+        <div class="container">
+            <div class="banner-all-shape-wrapper">
+                <div class="banner-home__banner-shape-1 first-shape">
+                    <img class="upDown-top" src="/assets/website/img/clashxv2ray/banner-shape-1.svg" alt="img not found">
+                </div>
+                <div class="banner-home__banner-shape-2 second-shape">
+                    <img class="upDown-bottom" src="/assets/website/img/clashxv2ray/banner-shape-2.svg" alt="img not found">
+                </div>
+                <div class="right-shape">
+                    <img class="zooming" src="/assets/website/img/clashxv2ray/inner-right-shape.svg" alt="img not found">
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-between">
+                <div class="col-12">
+                    <div class="breadcrumb__content text-center">
+                        <div class="breadcrumb__title-wrapper mb-15 mb-sm-10 mb-xs-5">
+                            <h1 class="breadcrumb__title color-white">完美配置：Mac上Clash局域网代理全面指南</h1>
+                        </div>
+                        <div class="breadcrumb__menu" data-wow-delay=".5s">
+                            <nav>
+                                <ul>
+                                    <li><span><a href="/">首页</a></span></li>
+                                    <li><span><a href="/news/">新闻资讯</a></span></li>
+                                    <li class="active"><span>正文</span></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!--latest Choose Us start-->
+        <section class="latest-Choose-us__area section-space overflow-hidden latest-Choose-bg">
+            <div class="container p-relative z-index-1">
+                <div class="row">
+                    <div class="col-md-9">
+                                        <input type="hidden" id="share-website-info" data-name="Clash Node官网订阅站" data-url="https://clashnode.github.io">
+                <div class="xcblog-blog-detail xcblog-blog-detail-defined">
+                    
+<p data-start="27" data-end="252" class="">在数字化时代，网络环境变得越来越复杂，尤其是对于那些需要频繁跨越地域限制，或在局域网内共享资源的用户来说，使用高效且灵活的代理工具尤为重要。Clash 作为一款强大的代理工具，凭借其出色的灵活性和稳定性，成为了许多用户的首选。而对于Mac用户而言，利用Clash配置局域网代理，不仅能够增强网络的访问能力，还能优化网络性能，提高用户体验。本文将全面讲解如何在Mac上使用Clash进行局域网代理的设置，带您从安装到配置，逐步掌握如何高效使用这一工具。</p>
+<h2 data-start="254" data-end="266" class="">什么是Clash？</h2>
+<p data-start="268" data-end="387" class="">Clash 是一款功能强大的代理工具，广泛应用于网络流量的管理和优化。它支持多个协议，能够帮助用户突破地理限制访问被封锁的资源。对于Mac用户来说，Clash不仅可以翻墙，还能够通过配置实现局域网内的代理，极大提高网络连接的灵活性和效率。</p>
+<p data-start="389" data-end="547" class="">Clash的核心优势在于其高度的可配置性。用户可以通过编辑 YAML 配置文件来精细控制代理规则，支持节点管理、流量分配、DNS解析等功能。这使得Clash成为了一个非常适合在Mac环境下进行网络管理和优化的工具，特别是在需要处理多个设备间共享资源的情况下，Clash能帮助用户实现流量智能调度，保证网络连接的顺畅。</p>
+<h2 data-start="549" data-end="570" class="">为什么选择Clash作为局域网代理？</h2>
+<p data-start="572" data-end="618" class="">在众多的代理工具中，Clash脱颖而出，成为许多用户的首选。这是因为它具有以下几个显著优点：</p>
+<h3 data-start="620" data-end="630" class="">1. 灵活性</h3>
+<p data-start="632" data-end="724" class="">Clash允许用户根据实际需求，设置各种网络请求的处理规则。通过编辑配置文件，用户可以灵活地指定代理节点、调整流量策略，甚至根据不同的网络情况动态切换节点，这为用户提供了极大的自由度。</p>
+<h3 data-start="726" data-end="736" class="">2. 高效性</h3>
+<p data-start="738" data-end="819" class="">Clash的一个突出特点是其高效性。与其他代理工具相比，Clash能够同时管理多个节点，并且其流量转发速度非常快，能够有效地减低网络延迟，提供更为流畅的网络体验。</p>
+<h3 data-start="821" data-end="833" class="">3. 低资源占用</h3>
+<p data-start="835" data-end="922" class="">Clash在运行时非常轻量化，它对系统资源的占用较低。即使在后台运行，Clash也不会对Mac的内存和CPU造成较大压力，这确保了用户在进行其他操作时能够维持较高的系统性能。</p>
+<h2 data-start="924" data-end="942" class="">如何在Mac上安装Clash？</h2>
+<h3 data-start="944" data-end="958" class="">1. 下载Clash</h3>
+<p data-start="960" data-end="1035" class="">首先，访问Clash的官方网站或开源平台，下载适用于MacOS的最新版本的Clash应用程序。下载过程非常简单，确保选择与您的操作系统版本兼容的文件。</p>
+<h3 data-start="1037" data-end="1051" class="">2. 安装Clash</h3>
+<p data-start="1053" data-end="1143" class="">下载完成后，双击下载的 DMG 文件打开安装包。将Clash图标拖拽到“应用程序”文件夹中。安装过程非常简单，几乎无需额外操作。安装完毕后，您可以在应用程序中找到Clash并启动。</p>
+<h3 data-start="1145" data-end="1159" class="">3. 启动Clash</h3>
+<p data-start="1161" data-end="1242" class="">在第一次启动Clash时，系统可能会提示您允许来自不明开发者的应用程序。在这种情况下，前往“系统偏好设置”中的“安全性与隐私”选项，点击“允许”以启动Clash。</p>
+<h2 data-start="1244" data-end="1261" class="">配置Clash进行局域网代理</h2>
+<p data-start="1263" data-end="1311" class="">一旦安装成功并启动Clash，接下来就需要配置Clash以实现局域网代理。以下是详细的配置步骤：</p>
+<h3 data-start="1313" data-end="1327" class="">1. 启动Clash</h3>
+<p data-start="1329" data-end="1400" class="">打开终端（Terminal），通过命令行启动Clash，确保它正常运行。通常，Clash启动后会在屏幕上显示相应的状态信息，确认服务已经启用。</p>
+<h3 data-start="1402" data-end="1415" class="">2. 编辑配置文件</h3>
+<p data-start="1417" data-end="1539" class="">Clash通过 YAML 格式的配置文件来管理其运行规则。在配置文件中，用户可以定义代理节点、设置流量规则等。配置文件通常存放在 <code data-start="1482" data-end="1511">~/.config/clash/config.yaml</code> 目录下，如果这个目录不存在，可以通过以下命令来创建它：</p>
+<pre class="overflow-visible!" data-start="1541" data-end="1578"><div class="contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary"><div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary select-none rounded-t-[5px]">bash</div><div class="sticky top-9"><div class="absolute end-0 bottom-0 flex h-9 items-center pe-2"><div class="bg-token-sidebar-surface-primary text-token-text-secondary dark:bg-token-main-surface-secondary flex items-center rounded-sm px-2 font-sans text-xs"><span class="" data-state="closed"></span><span class="" data-state="closed"></span></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span><span class="hljs-built_in">mkdir</span></span><span> -p ~/.config/clash/
+</span></span></code></div></div></pre>
+<p data-start="1580" data-end="1652" class="">然后，将您配置好的 <code data-start="1590" data-end="1603">config.yaml</code> 文件放置到该目录下。配置文件内容包括代理节点列表、流量转发规则等。这里是一个简单的节点配置示例：</p>
+<pre class="overflow-visible!" data-start="1654" data-end="1825"><div class="contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary"><div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary select-none rounded-t-[5px]">yaml</div><div class="sticky top-9"><div class="absolute end-0 bottom-0 flex h-9 items-center pe-2"><div class="bg-token-sidebar-surface-primary text-token-text-secondary dark:bg-token-main-surface-secondary flex items-center rounded-sm px-2 font-sans text-xs"><span class="" data-state="closed"></span><span class="" data-state="closed"></span></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-yaml"><span><span><span class="hljs-attr">proxy:</span></span><span>
+  </span><span><span class="hljs-bullet">-</span></span><span> </span><span><span class="hljs-attr">name:</span></span><span> </span><span><span class="hljs-string">"Proxy-Server"</span></span><span>
+    </span><span><span class="hljs-attr">type:</span></span><span> </span><span><span class="hljs-string">vmess</span></span><span>
+    </span><span><span class="hljs-attr">server:</span></span><span> </span><span><span class="hljs-string">"your.server.address"</span></span><span>
+    </span><span><span class="hljs-attr">port:</span></span><span> </span><span><span class="hljs-number">12345</span></span><span>
+    </span><span><span class="hljs-attr">uuid:</span></span><span> </span><span><span class="hljs-string">"your-uuid"</span></span><span>
+    </span><span><span class="hljs-attr">alterId:</span></span><span> </span><span><span class="hljs-number">64</span></span><span>
+    </span><span><span class="hljs-attr">cipher:</span></span><span> </span><span><span class="hljs-string">aes-128-gcm</span></span><span>
+</span></span></code></div></div></pre>
+<p data-start="1827" data-end="1861" class="">在配置文件中，您可以根据需求增加多个代理节点，并设置流量的分配规则。</p>
+<h3 data-start="1863" data-end="1877" class="">3. 设置局域网代理</h3>
+<p data-start="1879" data-end="1971" class="">一旦配置文件完成，您需要在Mac的“网络偏好设置”中，设置局域网代理。通过在Clash中设置 HTTP 和 SOCKS 代理，您可以将局域网内的流量通过Clash转发到指定的代理节点。</p>
+<ul data-start="1973" data-end="2068">
+<li data-start="1973" data-end="2019" class="">
+<p data-start="1975" data-end="2019" class=""><strong data-start="1975" data-end="1985">HTTP代理</strong>：将HTTP请求全体转发。配置为 <code data-start="2002" data-end="2018">127.0.0.1:7890</code>。</p>
+</li>
+<li data-start="2020" data-end="2068" class="">
+<p data-start="2022" data-end="2068" class=""><strong data-start="2022" data-end="2033">SOCKS代理</strong>：用于处理SOCKS5请求。配置为 <code data-start="2051" data-end="2067">127.0.0.1:7891</code>。</p>
+</li>
+</ul>
+<h3 data-start="2070" data-end="2085" class="">4. 确认开启代理服务</h3>
+<p data-start="2087" data-end="2193" class="">完成配置后，检查Clash的状态栏图标，确保它显示为“已连接”。您还可以使用 <code data-start="2126" data-end="2132">curl</code> 命令或者直接访问网页来确认代理服务是否正常工作。如果代理未成功连接，可以检查配置文件是否正确，或尝试切换不同的代理节点。</p>
+<h2 data-start="2195" data-end="2212" class="">调整Clash配置以提高性能</h2>
+<p data-start="2214" data-end="2260" class="">为了确保局域网代理的高效运行，您可能需要根据实际情况调整一些设置。以下是一些常见的优化方法：</p>
+<h3 data-start="2262" data-end="2279" class="">1. 选择合适的DNS设置</h3>
+<p data-start="2281" data-end="2372" class="">在Clash中，您可以配置DNS以提高网络连接的稳定性。使用国际DNS（如 8.8.8.8）可以帮助提升解析速度和稳定性。同时，使用本地IP地址可能有助于解决某些特定网络的连接错误。</p>
+<h3 data-start="2374" data-end="2387" class="">2. 优化混合机制</h3>
+<p data-start="2389" data-end="2470" class="">Clash支持节点混合机制，您可以根据业务需求调整节点的选择。例如，对于某些重要的网络请求，可以在配置文件中设置直连IP，确保特定的请求可以优先通过高速通道转发。</p>
+<h3 data-start="2472" data-end="2485" class="">3. 刷新流量策略</h3>
+<p data-start="2487" data-end="2556" class="">根据网络流量的变化，定期调整Clash的工作策略是非常有必要的。通过监控流量，及时调整节点和规则，可以有效减少延迟并提高网络的抗干扰能力。</p>
+<h2 data-start="2558" data-end="2572" class="">常见问题解答（FAQ）</h2>
+<h3 data-start="2574" data-end="2595" class="">1. 如何确保局域网代理的安全性？</h3>
+<p data-start="2597" data-end="2649" class="">确保局域网代理的安全性，首先可以通过设置密码保护来限制访问权限。此外，建议启用加密传输以防止数据被截取。</p>
+<h3 data-start="2651" data-end="2672" class="">2. 使用Clash会影响网络吗？</h3>
+<p data-start="2674" data-end="2751" class="">切换到Clash代理后，网络表现可能会有所变化，具体取决于代理节点的稳定性。某些站点可能会由于代理延迟而变得无法访问，因此建议定期切换节点以优化访问体验。</p>
+<h3 data-start="2753" data-end="2772" class="">3. 如何诊断Clash异常？</h3>
+<p data-start="2774" data-end="2827" class="">当Clash出现问题时，可以通过查看日志文件进行排查。打开日志输出模式，并根据日志中的信息追踪错误的根源。</p>
+<h3 data-start="2829" data-end="2848" class="">4. Clash支持哪些协议？</h3>
+<p data-start="2850" data-end="2913" class="">Clash支持多个常见的网络协议，包括 HTTP、SOCKS、Trojan 等。用户可以根据自己的需求灵活配置不同的代理协议。</p>
+<h3 data-start="2915" data-end="2934" class="">5. 如何更新Clash版本？</h3>
+<p data-start="2936" data-end="2996" class="">Clash的更新非常简单，用户可以通过官网或者命令行下载并安装新版本。更新后，确保重新加载配置文件以启用新的功能和修复。</p>
+<h2 data-start="2998" data-end="3003" class="">总结</h2>
+<p data-start="3005" data-end="3168" class="">通过本文的详细介绍，您应该能够在Mac上成功配置Clash进行局域网代理。无论是提高网络速度、突破地理限制，还是实现多个设备间的资源共享，Clash都能提供极高的灵活性和稳定性。掌握了配置技巧和优化方法后，您可以大大提高网络使用效率，享受更流畅、安全的上网体验。希望本篇文章能够帮助您更好地使用Clash，成为网络管理的高手！</p>                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-104106.htm">华为手机平板科学上网实用指南：突破网络限制，畅享全球信息</a></p>
+                                        <p>下一个：<a href="/news/article-105039.htm">解决手机V2Ray速度慢的问题：优化技巧与解决方案</a></p>
+                                    </div>
+                                    </div>
+                    <div class="col-md-3">
+                        <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/news/article-96708.htm" title="使用Shadowrocket绕过大陆网络限制的全面指南">使用Shadowrocket绕过大陆网络限制的全面指南</a></li>
+                        <li class="py-2"><a href="/news/article-95971.htm" title="如何通过手机使用V2Ray共享网络连接至电脑：详细指南">如何通过手机使用V2Ray共享网络连接至电脑：详细指南</a></li>
+                        <li class="py-2"><a href="/news/article-98800.htm" title="如何科学上网以访问谷歌：详尽指南与安全建议">如何科学上网以访问谷歌：详尽指南与安全建议</a></li>
+                        <li class="py-2"><a href="/news/article-105039.htm" title="解决手机V2Ray速度慢的问题：优化技巧与解决方案">解决手机V2Ray速度慢的问题：优化技巧与解决方案</a></li>
+                        <li class="py-2"><a href="/news/article-92249.htm" title="全面解析mr_clash：功能、安装与配置详解">全面解析mr_clash：功能、安装与配置详解</a></li>
+                        <li class="py-2"><a href="/news/article-91162.htm" title="v2ray版本更新全解析：从功能迭代到用户体验的深度革新">v2ray版本更新全解析：从功能迭代到用户体验的深度革新</a></li>
+                        <li class="py-2"><a href="/news/article-105814.htm" title="信息素养时代的启蒙：一场科学上网主题班会的全流程设计指南">信息素养时代的启蒙：一场科学上网主题班会的全流程设计指南</a></li>
+                        <li class="py-2"><a href="/news/article-100994.htm" title="新手也能轻松上手！科学上网一键安装包详细使用指南与避坑技巧">新手也能轻松上手！科学上网一键安装包详细使用指南与避坑技巧</a></li>
+                        <li class="py-2"><a href="/news/article-89931.htm" title="V2Ray 断网问题解析：为何打开 V2Ray 后网络频繁断开？">V2Ray 断网问题解析：为何打开 V2Ray 后网络频繁断开？</a></li>
+                        <li class="py-2"><a href="/news/article-90720.htm" title="Ultra vs Clash：两大网络代理工具深度对比与实用解析">Ultra vs Clash：两大网络代理工具深度对比与实用解析</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">50</span> <a href="/date/2025-04/" title="2025-04 归档">2025-04</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--latest Choose Us end-->
+        
+        
+    </main>
+        <!-- Footer area start -->
+    <footer>
+        <section class="footer__area-common background overflow-hidden position-relative z-1">
+            <div class="footer__bottom-wrapper footer__bottom-home-1-bg">
+                <div class="container">
+                    <div class="footer__bottom">
+                        <div class="footer__copyright">
+                                                <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                            <p>
+                                <a href="/">免费Clash|V2ray机场订阅中文网</a> 版权所有 Powered by WordPress
+                            </p>
+                        </div>
+                        <div class="footer__copyright-menu">
+                            <ul>
+                                <li><a href="about-us.html">Privacy & Terms Condition</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- Footer area end -->
+    <!-- JS here -->
+    <script src="/assets/website/js/frontend/clashxv2ray/jquery-3.6.0.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/waypoints.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/bootstrap.bundle.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/meanmenu.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/swiper.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/wow.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/magnific-popup.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/type.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/counterup.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/nice-select.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/jquery-ui.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/parallax-scroll.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/jquery.countdown.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/isotope-docs.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/ajax-form.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/slick.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/main.js"></script>
+    <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script>
+    <script src="/assets/website/js/frontend/G.js"></script>
+</body>
+
+</html>
