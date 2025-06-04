@@ -1,0 +1,332 @@
+<!doctype html>
+<html xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://v2rayfreeclash.github.io/news/article-121477.htm" />
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>掌握K1设备高效连接V2Ray的完整指南：从原理到实战</title>
+        <meta name="description" content="在当今数字化时代，网络自由与隐私保护已成为刚需。面对复杂的网络环境，如何安全稳定地突破限制成为技术爱好者关注的焦点。本文将全面解析如何利用K1网络设备与V2Ray代理工具构建高效网络通道，不仅提供详细" />
+        <link rel="icon" href="/assets/website/img/clashxv2ray/favicon.ico" type="image/x-icon"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="author" content="免费Clash|V2ray机场订阅中文网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://v2rayfreeclash.github.io/news/article-121477.htm" />
+    <meta property="og:site_name" content="免费Clash|V2ray机场订阅中文网" />
+    <meta property="og:title" content="掌握K1设备高效连接V2Ray的完整指南：从原理到实战" />
+    <meta property="og:image" content="https://v2rayfreeclash.github.io/uploads/20250131/08cb283e1aeee19e85ed9791d49a29cd.webp" />
+        <meta property="og:release_date" content="2025-06-04T09:28:58" />
+    <meta property="og:updated_time" content="2025-06-04T09:28:58" />
+        <meta property="og:description" content="在当今数字化时代，网络自由与隐私保护已成为刚需。面对复杂的网络环境，如何安全稳定地突破限制成为技术爱好者关注的焦点。本文将全面解析如何利用K1网络设备与V2Ray代理工具构建高效网络通道，不仅提供详细" />
+    
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="掌握K1设备高效连接V2Ray的完整指南：从原理到实战">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+
+    <link href="/assets/website/css/clashxv2ray/css2-Sofia_swap.css" rel="stylesheet">
+    <!-- CSS here -->
+    <link rel="stylesheet" href="/assets/website/css/clashxv2ray/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/website/css/clashxv2ray/animate.min.css">
+    <link rel="stylesheet" href="/assets/website/css/clashxv2ray/swiper.min.css">
+    <link rel="stylesheet" href="/assets/website/css/clashxv2ray/magnific-popup.css">
+    <link rel="stylesheet" href="/assets/website/css/clashxv2ray/fontawesome-pro.css">
+    <link rel="stylesheet" href="/assets/website/css/clashxv2ray/spacing.css">
+    <link rel="stylesheet" href="/assets/website/css/clashxv2ray/custom-font.css">
+    <link rel="stylesheet" href="/assets/website/css/clashxv2ray/main.css">
+    <link rel="stylesheet" href="/assets/website/css/G.css" />
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PT713HZN6R"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PT713HZN6R');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854"
+     crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+
+    <!-- preloader start -->
+    <div id="preloader">
+        <div class="preloader-close">x</div>
+        <div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
+        </div>
+    </div>
+    <!-- preloader start -->
+    <!-- Backtotop start -->
+    <div class="backtotop-wrap cursor-pointer">
+        <svg class="backtotop-circle svg-content" width="100%" height="100%" viewbox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+        </svg>
+    </div>
+    <!-- Backtotop end -->
+    <!-- Offcanvas area start -->
+    <div class="fix">
+        <div class="offcanvas__area">
+            <div class="offcanvas__wrapper">
+                <div class="offcanvas__content">
+                    <div class="offcanvas__top d-flex justify-content-between align-items-center">
+                        <div class="offcanvas__logo">
+                            <a href="/" class="xcblog-blog-logo">
+                                <span>免费V2ray机场</span>
+                            </a>
+                        </div>
+                        <div class="offcanvas__close">
+                            <button class="offcanvas-close-icon animation--flip">
+                                <span class="offcanvas-m-lines">
+                                    <span class="offcanvas-m-line line--1"></span><span class="offcanvas-m-line line--2"></span><span class="offcanvas-m-line line--3"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mobile-menu fix"></div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas__overlay"></div>
+    <div class="offcanvas__overlay-white"></div>
+    <!-- Offcanvas area start -->
+    <!-- Header area start -->
+    <header>
+        <div id="header-sticky" class="header__area header-1">
+            <div class="container">
+                <div class="mega__menu-wrapper p-relative">
+                    <div class="header__main">
+                        <div class="header__left">
+                            <div class="header__logo">
+                                <div class="logo">
+                                    <a href="/" class="xcblog-blog-logo">
+                                                                                <span>免费V2ray机场</span>
+                                                                            </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__middle">
+                            <div class="mean__menu-wrapper d-none d-lg-block">
+                                <div class="main-menu">
+                                    <nav id="mobile-menu">
+                                        <ul>
+                                                                                        <li>
+                                                <a href="/">首页</a>
+                                            </li>
+                                                                                        <li>
+                                                <a href="/paid-subscribe/">推荐机场</a>
+                                            </li>
+                                                                                        <li>
+                                                <a href="/news/">新闻资讯</a>
+                                            </li>
+                                                                                        <li>
+                                                <a href="/client.htm">客户端</a>
+                                            </li>
+                                                                                    </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__right">
+                            <div class="header__action d-flex align-items-center">
+                                <div class="header__hamburger ml-20 d-lg-none">
+                                    <div class="sidebar__toggle">
+                                        <button class="bar-icon">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Header area end -->
+
+<div id="popup-search-box">
+    <div class="box-inner-wrap d-flex align-items-center">
+        <form id="form" action="#" method="get" role="search">
+            <input id="popup-search" type="text" name="s" placeholder="Type keywords here...">
+        </form>
+        <div class="search-close"><i class="fa-sharp fa-regular fa-xmark"></i></div>
+    </div>
+</div>
+<!-- Header area end -->
+
+<!-- Body main wrapper start -->
+<main>
+
+    <div class="breadcrumb__area breadcrumb-space overflow-hidden banner-home-bg ">
+        <div class="banner-home__middel-shape inner-top-shape"></div>
+        <div class="container">
+            <div class="banner-all-shape-wrapper">
+                <div class="banner-home__banner-shape-1 first-shape">
+                    <img class="upDown-top" src="/assets/website/img/clashxv2ray/banner-shape-1.svg" alt="img not found">
+                </div>
+                <div class="banner-home__banner-shape-2 second-shape">
+                    <img class="upDown-bottom" src="/assets/website/img/clashxv2ray/banner-shape-2.svg" alt="img not found">
+                </div>
+                <div class="right-shape">
+                    <img class="zooming" src="/assets/website/img/clashxv2ray/inner-right-shape.svg" alt="img not found">
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-between">
+                <div class="col-12">
+                    <div class="breadcrumb__content text-center">
+                        <div class="breadcrumb__title-wrapper mb-15 mb-sm-10 mb-xs-5">
+                            <h1 class="breadcrumb__title color-white">掌握K1设备高效连接V2Ray的完整指南：从原理到实战</h1>
+                        </div>
+                        <div class="breadcrumb__menu" data-wow-delay=".5s">
+                            <nav>
+                                <ul>
+                                    <li><span><a href="/">首页</a></span></li>
+                                    <li><span><a href="/news/">新闻资讯</a></span></li>
+                                    <li class="active"><span>正文</span></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!--latest Choose Us start-->
+        <section class="latest-Choose-us__area section-space overflow-hidden latest-Choose-bg">
+            <div class="container p-relative z-index-1">
+                <div class="row">
+                    <div class="col-md-9">
+                                        <input type="hidden" id="share-website-info" data-name="Clash Node官网订阅站" data-url="https://clashnode.github.io">
+                <div class="xcblog-blog-detail xcblog-blog-detail-defined">
+                      <p>在当今数字化时代，网络自由与隐私保护已成为刚需。面对复杂的网络环境，如何安全稳定地突破限制成为技术爱好者关注的焦点。本文将全面解析如何利用K1网络设备与V2Ray代理工具构建高效网络通道，不仅提供详细操作步骤，更深入探讨技术原理与优化技巧，助您打造专属的高速私密网络环境。</p>  <h2>深度解析：V2Ray与K1设备的协同优势</h2>  <p>V2Ray作为新一代代理工具的代表，其技术架构远胜于传统VPN解决方案。它采用模块化设计理念，支持VMess、Socks、HTTP等多种协议，通过动态端口和流量伪装技术有效对抗深度包检测（DPI）。与Shadowsocks相比，V2Ray的显著优势在于其智能路由功能，可以根据预设规则自动分流国内外流量，既保障了访问速度，又确保了隐私安全。</p>  <p>K1设备作为多功能网络中枢，其硬件加速和QoS优化能力使其成为运行V2Ray的理想平台。当两者结合时，K1的硬件级数据包处理能力可以充分发挥V2Ray的协议优势，实现： - <strong>全网络覆盖</strong>：连接K1的所有设备自动获得代理服务 - <strong>硬件级加速</strong>：减轻终端设备CPU负担，提升加密解密效率 - <strong>集中管理</strong>：统一配置策略，避免多设备重复设置 - <strong>稳定运行</strong>：7×24小时不间断服务，告别移动端频繁重连</p>  <h2>前期准备：构建完美连接的基础</h2>  <p>成功的配置始于充分的准备。在开始操作前，请确保您已完备以下要素：</p>  <ol> <li><p><strong>V2Ray服务端信息</strong>：</p>  <ul> <li>服务器地址（支持域名或IP）</li> <li>监听端口（通常为443或自定义高端口）</li> <li>用户ID（UUID格式，如"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"）</li> <li>额外ID（AlterID，通常设为64-100之间的值）</li> <li>加密方式（推荐"auto"或"aes-128-gcm"）</li> <li>传输协议（TCP/mKCP/WebSocket等）</li> </ul></li> <li><p><strong>K1设备状态检查</strong>：</p>  <ul> <li>确认固件版本（建议升级至最新稳定版）</li> <li>记录默认网关地址（通常为192.168.1.1或192.168.0.1）</li> <li>准备管理员凭证（默认用户名/密码通常为admin/admin）</li> </ul></li> <li><p><strong>网络环境评估</strong>：</p>  <ul> <li>测试直连服务器延迟（通过ping命令）</li> <li>检查ISP是否限制常用代理端口</li> <li>确认NAT类型（全锥形NAT最佳）</li> </ul></li> </ol>  <blockquote>   <p><strong>专业建议</strong>：使用在线UUID生成器创建专属ID，避免使用公开分享的配置，这是保障连接安全的关键步骤。同时建议在计算机上先用V2RayN客户端测试服务器可用性，再配置到K1设备。</p> </blockquote>  <h2>逐步详解：K1配置V2Ray全流程</h2>  <h3>第一阶段：访问管理界面</h3>  <ol> <li>使用有线连接直接接入K1的LAN口（无线配置可能导致中断）</li> <li>打开浏览器无痕窗口（避免缓存干扰）</li> <li>输入管理地址时注意：  <ul> <li>若自定义过局域网网段，需相应调整</li> <li>部分设备要求完整URL（如http://192.168.1.1/login.html）</li> </ul></li> <li>首次登录建议修改默认密码，在"系统工具→修改密码"处设置强密码</li> </ol>  <h3>第二阶段：定位代理设置</h3>  <p>不同固件版本的界面可能有所差异： - <strong>OpenWRT系</strong>：服务→V2Ray Pro（或类似插件） - <strong>Padavan系</strong>：高级设置→VPN→V2Ray - <strong>原厂固件</strong>：可能需要先安装第三方插件包</p>  <p>若界面中没有直接选项，可能需要： 1. 检查是否已安装V2Ray插件 2. 通过SSH连接手动安装（需一定Linux知识） 3. 考虑刷入支持V2Ray的第三方固件</p>  <h3>第三阶段：核心参数配置</h3>  <p>进入配置界面后，重点关注以下高级参数：</p>  <p><code>json {   "inbounds": [...],   "outbounds": [     {       "protocol": "vmess",       "settings": {         "vnext": [           {             "address": "your_server.com",             "port": 443,             "users": [               {                 "id": "your_uuid_here",                 "alterId": 64,                 "security": "auto"               }             ]           }         ]       },       "streamSettings": {         "network": "tcp",         "security": "tls",         "tlsSettings": {           "serverName": "your_domain.com",           "allowInsecure": false         }       }     }   ] }</code></p>  <p><strong>关键细节说明</strong>： - <strong>alterId</strong>：影响抗封锁能力但增加延迟，普通用户建议64，高敏感环境可设100 - <strong>streamSettings</strong>：企业级用户建议配置WebSocket+ TLS+ Web组合，极大提升隐蔽性 - <strong>MUX</strong>：多路复用可提升并发性能，但可能增加延迟</p>  <h3>第四阶段：连接测试与优化</h3>  <p>点击测试按钮后，系统通常会返回： - <strong>成功响应</strong>：显示延迟和速度指标 - <strong>基础失败</strong>：检查防火墙和端口开放状态 - <strong>TLS错误</strong>：确认证书有效性（特别是自签名证书） - <strong>协议不匹配</strong>：核对服务端与客户端版本兼容性</p>  <p>高级用户可通过SSH登录，使用命令实时监控： <code>bash logread -f | grep v2ray</code> 这将输出详细的连接日志，帮助诊断深层问题。</p>  <h2>疑难排解：常见问题深度解决方案</h2>  <h3>连接不稳定问题</h3>  <p><strong>现象</strong>：频繁断线、速度波动大 <strong>解决方案</strong>： 1. 尝试不同传输协议（TCP/mKCP/WebSocket） 2. 调整concurrency参数（建议4-8之间） 3. 启用动态端口功能（需服务端支持） 4. 检查MTU设置（建议设为1476避免分片）</p>  <h3>速度不达标问题</h3>  <p><strong>诊断步骤</strong>： 1. 本地直连测速（排除代理影响） 2. 更换加密方式（chacha20-poly1305对ARM设备更友好） 3. 启用BBR加速（需内核支持） 4. 检查K1的CPU负载（高负载需限制连接数）</p>  <h3>特殊场景配置</h3>  <p><strong>游戏加速</strong>： - 启用UDP转发 - 设置QoS保证游戏流量优先级 - 调整"detour"配置实现智能路由</p>  <p><strong>4K视频</strong>： - 增大缓冲区大小 - 禁用MUX多路复用 - 使用h2代替WebSocket提升吞吐量</p>  <h2>安全加固与高级技巧</h2>  <h3>安全增强措施</h3>  <ol> <li><p><strong>防火墙规则</strong>：</p>  <ul> <li>限制V2Ray端口只接受特定IP访问</li> <li>设置异常登录报警</li> <li>启用自动封锁扫描IP功能</li> </ul></li> <li><p><strong>定期维护</strong>：</p>  <ul> <li>每月更换UUID</li> <li>更新geoip数据文件</li> <li>轮换TLS证书（Let's Encrypt可自动化）</li> </ul></li> </ol>  <h3>性能调优秘籍</h3>  <ol> <li><p><strong>内核参数优化</strong>： <code>bash echo "net.core.rmem_max=26214400" &gt;&gt; /etc/sysctl.conf echo "net.ipv4.tcp_rmem=4096 87380 26214400" &gt;&gt; /etc/sysctl.conf sysctl -p</code></p></li> <li><p><strong>硬件加速</strong>：</p>  <ul> <li>启用AES-NI指令集支持</li> <li>考虑添加USB网卡分流负载</li> </ul></li> <li><p><strong>智能路由</strong>： <code>json "routing": {  "domainStrategy": "IPIfNonMatch",  "rules": [    {      "type": "field",      "domain": ["geosite:cn"],      "outboundTag": "direct"    }  ] }</code></p></li> </ol>  <h2>未来展望与替代方案</h2>  <p>随着网络技术的发展，保持配置的与时俱进至关重要。建议关注： - <strong>Xray核心</strong>：V2Ray项目的延续，提供更先进的XTLS技术 - <strong>Tuic协议</strong>：基于QUIC的新一代代理协议 - <strong>Sing-Box</strong>：统一代理平台，支持多种新兴协议</p>  <p>定期备份您的配置（导出为JSON文件），当需要迁移到新平台时，这些配置通常只需少量修改即可复用。</p>  <h2>终极建议与总结</h2>  <p>通过本文的详细指导，您应该已经成功将K1设备打造为功能强大的V2Ray网关。记住，网络代理技术是不断演进的领域，保持学习才能持续享受顺畅的网络体验。建议每月花10分钟检查： - 服务器延迟变化 - 新版本功能更新 - 网络封锁态势</p>  <p>最后分享一个专业技巧：在K1上部署ddns-go动态域名解析工具，配合云端服务器实现自动故障转移，构建企业级的高可用代理网络。这看似复杂的设置，实际上只需额外20分钟即可完成，却能带来质的可靠性提升。</p>  <p>网络自由之路没有终点，但有了K1+V2Ray这对黄金组合，您已经拥有了探索数字世界的最佳伙伴。愿您在信息的海洋中畅游无阻，安全抵达每一个知识彼岸。</p>                 </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-121157.htm">苹果设备科学上网全攻略：解锁网络自由与安全</a></p>
+                                    </div>
+                                    </div>
+                    <div class="col-md-3">
+                        <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/news/article-115892.htm" title="安卓Clash配置全攻略：从安装到高级设置的实用指南">安卓Clash配置全攻略：从安装到高级设置的实用指南</a></li>
+                        <li class="py-2"><a href="/news/article-113458.htm" title="iOS设备上使用V2Ray的全面指南：安装、配置与常见问题解答">iOS设备上使用V2Ray的全面指南：安装、配置与常见问题解答</a></li>
+                        <li class="py-2"><a href="/news/article-119898.htm" title="手把手教你用小米路由器R3G打造V2Ray科学上网神器">手把手教你用小米路由器R3G打造V2Ray科学上网神器</a></li>
+                        <li class="py-2"><a href="/news/article-113159.htm" title="深入掌控你的代理行为：V2RayNG规则文件完全解析与实战指南">深入掌控你的代理行为：V2RayNG规则文件完全解析与实战指南</a></li>
+                        <li class="py-2"><a href="/news/article-116188.htm" title="群晖NAS上的v2rayng完整部署与使用指南：打造专属安全代理环境">群晖NAS上的v2rayng完整部署与使用指南：打造专属安全代理环境</a></li>
+                        <li class="py-2"><a href="/news/article-118068.htm" title="全面剖析 Clash 测试超时问题：原因、解决方案与优化实践">全面剖析 Clash 测试超时问题：原因、解决方案与优化实践</a></li>
+                        <li class="py-2"><a href="/news/article-121157.htm" title="苹果设备科学上网全攻略：解锁网络自由与安全">苹果设备科学上网全攻略：解锁网络自由与安全</a></li>
+                        <li class="py-2"><a href="/news/article-118382.htm" title="掌控家庭网络自由的钥匙：基于梅林固件的免费科学上网完全指南">掌控家庭网络自由的钥匙：基于梅林固件的免费科学上网完全指南</a></li>
+                        <li class="py-2"><a href="/news/article-112506.htm" title="v2rayng节点连接详解：全面指南与实用技巧">v2rayng节点连接详解：全面指南与实用技巧</a></li>
+                        <li class="py-2"><a href="/news/article-114671.htm" title="解锁极致网络体验：深度解析V2Ray与CDN融合的优势与实战指南">解锁极致网络体验：深度解析V2Ray与CDN融合的优势与实战指南</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">4</span> <a href="/date/2025-06/" title="2025-06 归档">2025-06</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">34</span> <a href="/date/2025-05/" title="2025-05 归档">2025-05</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--latest Choose Us end-->
+        
+        
+    </main>
+        <!-- Footer area start -->
+    <footer>
+        <section class="footer__area-common background overflow-hidden position-relative z-1">
+            <div class="footer__bottom-wrapper footer__bottom-home-1-bg">
+                <div class="container">
+                    <div class="footer__bottom">
+                        <div class="footer__copyright">
+                                                <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                            <p>
+                                <a href="/">免费Clash|V2ray机场订阅中文网</a> 版权所有 Powered by WordPress
+                            </p>
+                        </div>
+                        <div class="footer__copyright-menu">
+                            <ul>
+                                <li><a href="about-us.html">Privacy & Terms Condition</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- Footer area end -->
+    <!-- JS here -->
+    <script src="/assets/website/js/frontend/clashxv2ray/jquery-3.6.0.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/waypoints.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/bootstrap.bundle.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/meanmenu.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/swiper.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/wow.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/magnific-popup.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/type.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/counterup.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/nice-select.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/jquery-ui.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/parallax-scroll.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/jquery.countdown.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/isotope-docs.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/ajax-form.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/slick.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/main.js"></script>
+    <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script>
+    <script src="/assets/website/js/frontend/G.js"></script>
+</body>
+
+</html>
