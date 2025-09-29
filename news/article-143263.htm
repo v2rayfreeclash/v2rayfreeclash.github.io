@@ -1,0 +1,338 @@
+<!doctype html>
+<html xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://v2rayfreeclash.github.io/news/article-143263.htm" />
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>全面解析Shadowrocket节点消失问题：从检测到修复的完整指南</title>
+        <meta name="description" content="在当今互联网环境中，许多用户依赖代理工具来突破地域限制，访问全球资源。作为iOS平台上广受欢迎的代理客户端，Shadowrocket凭借其简洁的界面和强大的功能赢得了大量用户的青睐。然而，使用过程中最" />
+        <link rel="icon" href="/assets/website/img/clashxv2ray/favicon.ico" type="image/x-icon"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="author" content="免费Clash|V2ray机场订阅中文网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://v2rayfreeclash.github.io/news/article-143263.htm" />
+    <meta property="og:site_name" content="免费Clash|V2ray机场订阅中文网" />
+    <meta property="og:title" content="全面解析Shadowrocket节点消失问题：从检测到修复的完整指南" />
+    <meta property="og:image" content="https://v2rayfreeclash.github.io/uploads/20241223/a52e46fd14663cc6f72fa273cd4174e7.webp" />
+        <meta property="og:release_date" content="2025-08-10T06:58:40" />
+    <meta property="og:updated_time" content="2025-08-10T06:58:40" />
+        <meta property="og:description" content="在当今互联网环境中，许多用户依赖代理工具来突破地域限制，访问全球资源。作为iOS平台上广受欢迎的代理客户端，Shadowrocket凭借其简洁的界面和强大的功能赢得了大量用户的青睐。然而，使用过程中最" />
+    
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="全面解析Shadowrocket节点消失问题：从检测到修复的完整指南">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+
+    <link href="/assets/website/css/clashxv2ray/css2-Sofia_swap.css" rel="stylesheet">
+    <!-- CSS here -->
+    <link rel="stylesheet" href="/assets/website/css/clashxv2ray/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/website/css/clashxv2ray/animate.min.css">
+    <link rel="stylesheet" href="/assets/website/css/clashxv2ray/swiper.min.css">
+    <link rel="stylesheet" href="/assets/website/css/clashxv2ray/magnific-popup.css">
+    <link rel="stylesheet" href="/assets/website/css/clashxv2ray/fontawesome-pro.css">
+    <link rel="stylesheet" href="/assets/website/css/clashxv2ray/spacing.css">
+    <link rel="stylesheet" href="/assets/website/css/clashxv2ray/custom-font.css">
+    <link rel="stylesheet" href="/assets/website/css/clashxv2ray/main.css">
+    <link rel="stylesheet" href="/assets/website/css/G.css" />
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PT713HZN6R"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PT713HZN6R');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854"
+     crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+
+    <!-- preloader start -->
+    <div id="preloader">
+        <div class="preloader-close">x</div>
+        <div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
+        </div>
+    </div>
+    <!-- preloader start -->
+    <!-- Backtotop start -->
+    <div class="backtotop-wrap cursor-pointer">
+        <svg class="backtotop-circle svg-content" width="100%" height="100%" viewbox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+        </svg>
+    </div>
+    <!-- Backtotop end -->
+    <!-- Offcanvas area start -->
+    <div class="fix">
+        <div class="offcanvas__area">
+            <div class="offcanvas__wrapper">
+                <div class="offcanvas__content">
+                    <div class="offcanvas__top d-flex justify-content-between align-items-center">
+                        <div class="offcanvas__logo">
+                            <a href="/" class="xcblog-blog-logo">
+                                <span>免费V2ray机场节点</span>
+                            </a>
+                        </div>
+                        <div class="offcanvas__close">
+                            <button class="offcanvas-close-icon animation--flip">
+                                <span class="offcanvas-m-lines">
+                                    <span class="offcanvas-m-line line--1"></span><span class="offcanvas-m-line line--2"></span><span class="offcanvas-m-line line--3"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mobile-menu fix"></div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas__overlay"></div>
+    <div class="offcanvas__overlay-white"></div>
+    <!-- Offcanvas area start -->
+    <!-- Header area start -->
+    <header>
+        <div id="header-sticky" class="header__area header-1">
+            <div class="container">
+                <div class="mega__menu-wrapper p-relative">
+                    <div class="header__main">
+                        <div class="header__left">
+                            <div class="header__logo">
+                                <div class="logo">
+                                    <a href="/" class="xcblog-blog-logo">
+                                                                                <span>免费V2ray机场节点</span>
+                                                                            </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__middle">
+                            <div class="mean__menu-wrapper d-none d-lg-block">
+                                <div class="main-menu">
+                                    <nav id="mobile-menu">
+                                        <ul>
+                                                                                        <li>
+                                                <a href="/">首页</a>
+                                            </li>
+                                                                                        <li>
+                                                <a href="/free-nodes/">免费节点</a>
+                                            </li>
+                                                                                        <li>
+                                                <a href="/paid-subscribe/">推荐机场</a>
+                                            </li>
+                                                                                        <li>
+                                                <a href="/news/">新闻资讯</a>
+                                            </li>
+                                                                                        <li>
+                                                <a href="/client.htm">客户端</a>
+                                            </li>
+                                                                                    </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__right">
+                            <div class="header__action d-flex align-items-center">
+                                <div class="header__hamburger ml-20 d-lg-none">
+                                    <div class="sidebar__toggle">
+                                        <button class="bar-icon">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Header area end -->
+
+<div id="popup-search-box">
+    <div class="box-inner-wrap d-flex align-items-center">
+        <form id="form" action="#" method="get" role="search">
+            <input id="popup-search" type="text" name="s" placeholder="Type keywords here...">
+        </form>
+        <div class="search-close"><i class="fa-sharp fa-regular fa-xmark"></i></div>
+    </div>
+</div>
+<!-- Header area end -->
+
+<!-- Body main wrapper start -->
+<main>
+
+    <div class="breadcrumb__area breadcrumb-space overflow-hidden banner-home-bg ">
+        <div class="banner-home__middel-shape inner-top-shape"></div>
+        <div class="container">
+            <div class="banner-all-shape-wrapper">
+                <div class="banner-home__banner-shape-1 first-shape">
+                    <img class="upDown-top" src="/assets/website/img/clashxv2ray/banner-shape-1.svg" alt="img not found">
+                </div>
+                <div class="banner-home__banner-shape-2 second-shape">
+                    <img class="upDown-bottom" src="/assets/website/img/clashxv2ray/banner-shape-2.svg" alt="img not found">
+                </div>
+                <div class="right-shape">
+                    <img class="zooming" src="/assets/website/img/clashxv2ray/inner-right-shape.svg" alt="img not found">
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-between">
+                <div class="col-12">
+                    <div class="breadcrumb__content text-center">
+                        <div class="breadcrumb__title-wrapper mb-15 mb-sm-10 mb-xs-5">
+                            <h1 class="breadcrumb__title color-white">全面解析Shadowrocket节点消失问题：从检测到修复的完整指南</h1>
+                        </div>
+                        <div class="breadcrumb__menu" data-wow-delay=".5s">
+                            <nav>
+                                <ul>
+                                    <li><span><a href="/">首页</a></span></li>
+                                    <li><span><a href="/news/">新闻资讯</a></span></li>
+                                    <li class="active"><span>正文</span></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!--latest Choose Us start-->
+        <section class="latest-Choose-us__area section-space overflow-hidden latest-Choose-bg">
+            <div class="container p-relative z-index-1">
+                <div class="row">
+                    <div class="col-md-9">
+                                        <input type="hidden" id="share-website-info" data-name="Clash Node免费节点站" data-url="https://clashnode.github.io">
+                <div class="xcblog-blog-detail xcblog-blog-detail-defined">
+                      <p>在当今互联网环境中，许多用户依赖代理工具来突破地域限制，访问全球资源。作为iOS平台上广受欢迎的代理客户端，Shadowrocket凭借其简洁的界面和强大的功能赢得了大量用户的青睐。然而，使用过程中最令人困扰的问题莫过于"节点突然消失"——那些精心配置的服务器列表可能在某次刷新后神秘失踪，或者原本稳定的连接突然中断。这不仅影响工作效率，更可能打断重要的网络活动。本文将深入剖析节点消失的根源，提供系统化的检测方法，并给出切实可行的解决方案，帮助您彻底摆脱这一困扰。  </p>  <h2>理解Shadowrocket及其节点机制</h2>  <p>Shadowrocket本质上是一个智能路由工具，它通过在设备与目标网站之间建立代理隧道来工作。这些隧道就是我们常说的"节点"——实质上是分布在全球各地的中继服务器。当您访问某个网站时，请求会先加密发送至这些节点，再由节点转发到目标地址，从而隐藏真实IP并绕过网络限制。  </p>  <p>节点的质量直接影响使用体验：位于日本的节点可能适合访问动漫资源，而美国节点则对流媒体服务更为友好；物理距离近的节点通常延迟更低，但某些情况下经过特殊优化的远距离节点反而能提供更稳定的吞吐量。这种复杂性意味着节点管理需要持续的关注和调整，而非一劳永逸的设置。  </p>  <h2>节点消失的深层原因分析</h2>  <p>当发现节点列表空空如也时，背后的原因可能远比表面看起来复杂。服务器端的问题最为常见——许多代理服务商会定期更换IP地址以规避封锁，如果客户端未能及时同步更新，就会显示为节点消失。此外，共享型节点经常因为用户过多导致负载激增，管理员可能临时下线部分服务器进行维护。  </p>  <p>客户端方面的问题同样不容忽视。iOS系统的网络权限管理严格，当检测到异常流量时可能自动关闭VPN连接；Shadowrocket自身的缓存机制有时会出现紊乱，错误地隐藏可用节点；更常见的是用户误操作，比如不小心删除了配置文件或切换到了空白的分组标签。  </p>  <p>网络环境的影响则更为隐蔽。某些ISP会主动干扰代理流量，导致节点"看似"不可用；公共WiFi可能设置了防火墙规则阻止VPN连接；甚至手机信号强弱都会影响节点列表的加载完整性。这些因素交织在一起，使得故障排查需要系统化的方法。  </p>  <h2>专业级检测流程</h2>  <p>面对节点消失问题，有条不紊的检测比盲目尝试更重要。首先打开Shadowrocket的日志面板（通常位于"连接"选项卡下），观察最近几分钟的连接记录。如果显示"无法解析主机名"或"连接超时"，很可能是DNS或网络问题；若是"认证失败"等提示，则指向账号异常。  </p>  <p>进阶检测需要借助外部工具。在Mac或PC上使用Terminal执行<code>traceroute</code>命令（如<code>traceroute your_node_ip</code>），可以清晰看到网络包在哪个环节中断；在线端口检测工具能验证节点的SSH或VPN端口是否开放；而通过第三方测速应用对比直连与代理的速度差异，可以判断是否遭遇了限速。  </p>  <p>对于订阅型节点，务必检查订阅链接的有效期。许多服务商采用动态订阅机制，旧链接超过24小时就会失效。在Shadowrocket的"订阅"设置中查看最后更新时间，手动触发一次同步往往能立即恢复节点列表。  </p>  <h2>六维解决方案矩阵</h2>  <p>根据问题根源的不同，我们整理了六个层次的修复策略，按实施难度从低到高排列：  </p>  <ol> <li><p><strong>基础刷新</strong><br /> 下拉节点列表强制刷新，长按空白处选择"重置所有设置"。这个简单的动作能解决80%的临时性显示问题，特别是iOS系统升级后的兼容性异常。  </p></li> <li><p><strong>网络环境重置</strong><br /> 启用飞行模式30秒后关闭，切换WiFi/蜂窝数据，修改DNS为1.1.1.1或8.8.4.8。对于受网络策略限制的环境（如企业内网），这种方法尤为有效。  </p></li> <li><p><strong>配置深度清理</strong><br /> 删除并重新安装Shadowrocket（注意提前备份规则配置），使用iCleaner Pro清理iOS网络缓存。某些残留的旧版配置文件会与新版本冲突，导致节点显示异常。  </p></li> <li><p><strong>协议参数优化</strong><br /> 在节点编辑界面尝试切换传输协议（如从VMess改为Trojan），调整mux并发数或混淆设置。某些网络环境对特定协议类型有针对性干扰，灵活变更协议往往能突破限制。  </p></li> <li><p><strong>服务商协同排查</strong><br /> 联系节点提供商获取最新的备用域名和端口信息，要求检查账号状态。优质的服务商通常会提供API测试接口，让用户直接验证节点健康状况。  </p></li> <li><p><strong>系统级调试</strong><br /> 对于反复出现的问题，需要抓包分析。通过Thor或Stream等工具捕获网络请求，检查TLS握手过程是否被拦截。企业级用户可能需要配置自签名证书或搭建私有中转节点。  </p></li> </ol>  <h2>长效预防机制</h2>  <p>与其被动应对节点消失，不如建立主动防御体系。建议设置自动化监控：使用Shortcuts定时ping关键节点，异常时发送通知；在路由器层面配置故障转移，当主节点不可用时自动切换备用线路；定期导出节点配置到iCloud，建立版本回溯能力。  </p>  <p>节点选择上，优先考虑支持IPv6和BGP中转的高端服务。这类节点通常具有更强的抗封锁能力，且能智能选择最优网络路径。同时保持客户端更新习惯，Shadowrocket的每个正式版都会修复大量连接稳定性相关的bug。  </p>  <h2>专家点评</h2>  <p>节点管理本质上是场攻防博弈的艺术。本文揭示了一个深层规律：90%的"节点消失"都是表象，背后反映的是网络环境、客户端逻辑和服务端策略的三方互动失衡。真正资深的用户不会满足于临时修复，而是会建立节点健康度的评估体系——延迟只是最基础的指标，更需要关注TCP重传率、BGP路由跳数和TLS证书生命周期等专业参数。  </p>  <p>值得警惕的是，市场上大量所谓"永久免费"的节点服务，往往通过注入广告或窃取数据来盈利。当这类节点频繁"消失"又"复活"时，极可能是控制者在调整恶意代码。建议选择有信誉的付费服务，其稳定性和透明度通常与价格成正比。  </p>  <p>最后记住：在数字权利日益受限的时代，保持网络访问自由不仅需要技术工具，更需要持续学习适应的智慧。每一次节点故障都是提升网络素养的契机，掌握这些知识，您将成为真正的数字世界自由公民。</p>                 </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-142904.htm">苹果美区用户必备：Shadowrocket全方位使用指南与隐私保护实战</a></p>
+                                        <p>下一个：<a href="/news/article-143620.htm">突破网络边界：梅林固件与UDP协议打造高效科学上网全攻略</a></p>
+                                    </div>
+                                    </div>
+                    <div class="col-md-3">
+                        <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/free-nodes/2025-8-30-vless-node.htm" title="免费Clash|V2ray机场订阅 | 8月30日20.7M/S|免费Clash节点/V2ray节点/Shadowrocket节点/SSR订阅节点">免费Clash|V2ray机场订阅 | 8月30日20.7M/S|免费Clash节点/V2ray节点/Shadowrocket节点/SSR订阅节点</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-9-21-shadowrocket-node.htm" title="免费Clash|V2ray机场订阅 | 9月21日20.2M/S|免费SSR/Shadowrocket节点/Clash节点/V2ray订阅节点">免费Clash|V2ray机场订阅 | 9月21日20.2M/S|免费SSR/Shadowrocket节点/Clash节点/V2ray订阅节点</a></li>
+                        <li class="py-2"><a href="/news/article-141829.htm" title="无忧科学上网QQ：解锁全球互联网的终极指南与深度体验报告">无忧科学上网QQ：解锁全球互联网的终极指南与深度体验报告</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-8-25-vless-node.htm" title="免费Clash|V2ray机场订阅 | 8月25日20.2M/S|免费SSR/V2ray节点/Clash节点/Shadowrocket订阅节点">免费Clash|V2ray机场订阅 | 8月25日20.2M/S|免费SSR/V2ray节点/Clash节点/Shadowrocket订阅节点</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-8-21-node-share.htm" title="免费Clash|V2ray机场订阅 | 8月21日21.4M/S|免费Clash节点/V2ray节点/Shadowrocket节点/SSR订阅节点">免费Clash|V2ray机场订阅 | 8月21日21.4M/S|免费Clash节点/V2ray节点/Shadowrocket节点/SSR订阅节点</a></li>
+                        <li class="py-2"><a href="/news/article-143620.htm" title="突破网络边界：梅林固件与UDP协议打造高效科学上网全攻略">突破网络边界：梅林固件与UDP协议打造高效科学上网全攻略</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-9-1-today-vless-node.htm" title="免费Clash|V2ray机场订阅 | 9月1日21.5M/S|免费SSR/V2ray节点/Clash节点/Shadowrocket订阅节点">免费Clash|V2ray机场订阅 | 9月1日21.5M/S|免费SSR/V2ray节点/Clash节点/Shadowrocket订阅节点</a></li>
+                        <li class="py-2"><a href="/news/article-144711.htm" title="深度剖析Shadowrocket DNS覆写：解锁网络自由与隐私保护的终极指南">深度剖析Shadowrocket DNS覆写：解锁网络自由与隐私保护的终极指南</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-9-8-vless-node-github.htm" title="免费Clash|V2ray机场订阅 | 9月8日22M/S|免费Clash节点/SSR/V2ray节点/Shadowrocket订阅节点">免费Clash|V2ray机场订阅 | 9月8日22M/S|免费Clash节点/SSR/V2ray节点/Shadowrocket订阅节点</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-9-3-node-share-links.htm" title="免费Clash|V2ray机场订阅 | 9月3日18.5M/S|免费Shadowrocket节点/Clash节点/SSR/V2ray订阅节点">免费Clash|V2ray机场订阅 | 9月3日18.5M/S|免费Shadowrocket节点/Clash节点/SSR/V2ray订阅节点</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">23</span> <a href="/date/2025-09/" title="2025-09 归档">2025-09</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">27</span> <a href="/date/2025-08/" title="2025-08 归档">2025-08</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--latest Choose Us end-->
+        
+        
+    </main>
+        <!-- Footer area start -->
+    <footer>
+        <section class="footer__area-common background overflow-hidden position-relative z-1">
+            <div class="footer__bottom-wrapper footer__bottom-home-1-bg">
+                <div class="container">
+                    <div class="footer__bottom">
+                        <div class="footer__copyright">
+                                                <p>本站内容仅供学习与技术研究用途，无意传播或倡导任何违反法律法规的行为。在此声明：用户须自行了解所在地法律法规，合法合规使用；因使用不当产生的法律责任，与本站及作者无关；请在使用前仔细阅读本声明，继续使用即视为同意以上条款。</p>
+                    <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/free-nodes/">免费节点</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                                                <p>
+                                <a href="/">免费Clash|V2ray机场订阅中文网</a> 版权所有 Powered by WordPress
+                            </p>
+                        </div>
+                        <div class="footer__copyright-menu">
+                            <ul>
+                                <li><a href="about-us.html">Privacy & Terms Condition</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- Footer area end -->
+    <!-- JS here -->
+    <script src="/assets/website/js/frontend/clashxv2ray/jquery-3.6.0.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/waypoints.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/bootstrap.bundle.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/meanmenu.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/swiper.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/wow.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/magnific-popup.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/type.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/counterup.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/nice-select.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/jquery-ui.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/parallax-scroll.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/jquery.countdown.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/isotope-docs.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/ajax-form.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/slick.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxv2ray/main.js"></script>
+    <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script>
+    <script src="/assets/website/js/frontend/G.js"></script>
+</body>
+
+</html>
