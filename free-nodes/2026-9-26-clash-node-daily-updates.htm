@@ -374,24 +374,19 @@ A：在一些国家和地区使用此类工具有法律风险，请根据当地�
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>如何用 iptables 限制 V2Ray 服务的访问来源？</h5></div>
+    <div class="panel-heading"><h5>V2Ray 的 outbound freedom 模式有什么作用？</h5></div>
     <div class="panel-body">
-        使用 iptables 规则仅允许可信 IP 或 CDN 的中转 IP 访问服务端口，例如 `iptables -A INPUT -p tcp -s <trusted_ip> --dport 443 -j ACCEPT`，并在默认策略下拒绝其他来源，从而降低被扫描与滥用风险。<hr />    </div>
+        freedom 是直连模块，可用于分流策略中实现部分流量直连。用户可在 routing 中设置匹配规则，将国内域名或局域网 IP 指向 freedom 出口，从而减少代理开销和延迟。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>如何更新 Clash 的订阅节点？</h5></div>
+    <div class="panel-heading"><h5>VMess 的 gRPC 传输适合移动网络吗？</h5></div>
     <div class="panel-body">
-        在 Clash 中更新订阅节点，只需在配置页面中点击“Update”或“Refresh”按钮即可。系统会重新下载订阅链接中的内容，自动替换旧节点。这样能确保用户随时获取最新可用节点，避免连接失败或延迟过高。<hr />    </div>
+        gRPC 传输支持长连接和多路复用，减少握手次数，降低延迟。对于移动网络和高延迟环境，它能提供稳定和高速的访问体验，同时降低掉线和延迟波动风险。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Hiddify Next 的 Web 面板有什么用途？</h5></div>
     <div class="panel-body">
         Hiddify Next 自带 Web 管理面板，管理员可通过浏览器管理用户、监控流量、生成订阅链接并部署节点。无需命令行操作，极大提高管理效率。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>V2Ray 的 outbound freedom 模式有什么作用？</h5></div>
-    <div class="panel-body">
-        freedom 是直连模块，可用于分流策略中实现部分流量直连。用户可在 routing 中设置匹配规则，将国内域名或局域网 IP 指向 freedom 出口，从而减少代理开销和延迟。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>VLESS + XTLS 对高延迟网络有哪些优化？</h5></div>
@@ -404,14 +399,19 @@ A：在一些国家和地区使用此类工具有法律风险，请根据当地�
         Mihomo 是 Clash Meta 的优化分支，采用最新 Go 语言版本编译并针对多线程性能进行了改进。整体运行效率略高，特别是在多节点切换和 DNS 分流方面表现更流畅。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>PassWall2 如何实现智能分流？</h5></div>
+    <div class="panel-body">
+        PassWall2 通过自定义规则文件控制流量走向。可根据目标域名、国家或 IP 范围自动判断走代理或直连。用户还能加载社区规则，实现类似 Clash 的高效路由分流。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>如何更新 Clash 的订阅节点？</h5></div>
+    <div class="panel-body">
+        在 Clash 中更新订阅节点，只需在配置页面中点击“Update”或“Refresh”按钮即可。系统会重新下载订阅链接中的内容，自动替换旧节点。这样能确保用户随时获取最新可用节点，避免连接失败或延迟过高。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>VLESS Reality 模式与 XTLS 模式有何不同？</h5></div>
     <div class="panel-body">
         VLESS Reality 通过伪造握手和真实网站的 TLS 指纹实现高仿真加密，而 XTLS 强调高性能传输。Reality 更注重隐蔽性，适合高安全需求环境；XTLS 则偏重传输效率。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>VMess 的 gRPC 传输适合移动网络吗？</h5></div>
-    <div class="panel-body">
-        gRPC 传输支持长连接和多路复用，减少握手次数，降低延迟。对于移动网络和高延迟环境，它能提供稳定和高速的访问体验，同时降低掉线和延迟波动风险。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>VMess 协议的核心优势是什么？</h5></div>
@@ -419,9 +419,9 @@ A：在一些国家和地区使用此类工具有法律风险，请根据当地�
         VMess 是 V2Ray 项目的核心协议，支持加密、认证和多路复用功能。它能有效防止中间人攻击和流量识别，具有较高的安全性和灵活性，是目前科学上网中最常见的加密协议之一。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>PassWall2 如何实现智能分流？</h5></div>
+    <div class="panel-heading"><h5>如何用 iptables 限制 V2Ray 服务的访问来源？</h5></div>
     <div class="panel-body">
-        PassWall2 通过自定义规则文件控制流量走向。可根据目标域名、国家或 IP 范围自动判断走代理或直连。用户还能加载社区规则，实现类似 Clash 的高效路由分流。    </div>
+        使用 iptables 规则仅允许可信 IP 或 CDN 的中转 IP 访问服务端口，例如 `iptables -A INPUT -p tcp -s <trusted_ip> --dport 443 -j ACCEPT`，并在默认策略下拒绝其他来源，从而降低被扫描与滥用风险。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -469,16 +469,16 @@ A：在一些国家和地区使用此类工具有法律风险，请根据当地�
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/free-ssr-node-2026-8-7.htm" title="免费Clash|V2ray机场订阅 | 8月7日19.4M/S|免费V2ray节点/SSR节点/Trojan节点/Shadowrocket节点/Singbox节点/Clash节点订阅节点">免费Clash|V2ray机场订阅 | 8月7日19.4M/S|免费V2ray节点/SSR节点/Trojan节点/Shadowrocket节点/Singbox节点/Clash节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-high-speed-nodes-2026-8-25.htm" title="免费Clash|V2ray机场订阅 | 8月25日18.9M/S|免费Trojan节点/SSR节点/Clash节点/Shadowrocket节点/Singbox节点/V2ray节点订阅节点">免费Clash|V2ray机场订阅 | 8月25日18.9M/S|免费Trojan节点/SSR节点/Clash节点/Shadowrocket节点/Singbox节点/V2ray节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-high-speed-nodes-2026-8-27.htm" title="免费Clash|V2ray机场订阅 | 8月27日21.6M/S|免费Shadowrocket节点/Clash节点/SSR节点/Trojan节点/V2ray节点/Singbox节点订阅节点">免费Clash|V2ray机场订阅 | 8月27日21.6M/S|免费Shadowrocket节点/Clash节点/SSR节点/Trojan节点/V2ray节点/Singbox节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-ssr-node-2026-8-21.htm" title="免费Clash|V2ray机场订阅 | 8月21日21.1M/S|免费V2ray节点/Shadowrocket节点/SSR节点/Clash节点/Trojan节点/Singbox节点订阅节点">免费Clash|V2ray机场订阅 | 8月21日21.1M/S|免费V2ray节点/Shadowrocket节点/SSR节点/Clash节点/Trojan节点/Singbox节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-high-speed-nodes-2026-8-31.htm" title="免费Clash|V2ray机场订阅 | 8月31日22.7M/S|免费SSR节点/Singbox节点/Clash节点/V2ray节点/Shadowrocket节点/Trojan节点订阅节点">免费Clash|V2ray机场订阅 | 8月31日22.7M/S|免费SSR节点/Singbox节点/Clash节点/V2ray节点/Shadowrocket节点/Trojan节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-9-7.htm" title="免费Clash|V2ray机场订阅 | 9月7日20M/S|免费Clash节点/Trojan节点/SSR节点/V2ray节点/Singbox节点/Shadowrocket节点订阅节点">免费Clash|V2ray机场订阅 | 9月7日20M/S|免费Clash节点/Trojan节点/SSR节点/V2ray节点/Singbox节点/Shadowrocket节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-9-19.htm" title="免费Clash|V2ray机场订阅 | 9月19日21.5M/S|免费Shadowrocket节点/V2ray节点/Trojan节点/Clash节点/Singbox节点/SSR节点订阅节点">免费Clash|V2ray机场订阅 | 9月19日21.5M/S|免费Shadowrocket节点/V2ray节点/Trojan节点/Clash节点/Singbox节点/SSR节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-clash-subscribe-2026-9-5.htm" title="免费Clash|V2ray机场订阅 | 9月5日19M/S|免费Shadowrocket节点/V2ray节点/Trojan节点/Singbox节点/Clash节点/SSR节点订阅节点">免费Clash|V2ray机场订阅 | 9月5日19M/S|免费Shadowrocket节点/V2ray节点/Trojan节点/Singbox节点/Clash节点/SSR节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-28-free-v2ray.htm" title="免费Clash|V2ray机场订阅 | 9月28日22M/S|免费V2ray节点/Shadowrocket节点/SSR节点/Clash节点/Singbox节点/Trojan节点订阅节点">免费Clash|V2ray机场订阅 | 9月28日22M/S|免费V2ray节点/Shadowrocket节点/SSR节点/Clash节点/Singbox节点/Trojan节点订阅节点</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/shadowrocket-node-2026-9-11.htm" title="免费Clash|V2ray机场订阅 | 9月11日22.6M/S|免费V2ray节点/SSR节点/Trojan节点/Clash节点/Shadowrocket节点/Singbox节点订阅节点">免费Clash|V2ray机场订阅 | 9月11日22.6M/S|免费V2ray节点/SSR节点/Trojan节点/Clash节点/Shadowrocket节点/Singbox节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-12-clash-v2ray-ss-ssr.htm" title="免费Clash|V2ray机场订阅 | 9月12日18.7M/S|免费SSR节点/V2ray节点/Shadowrocket节点/Clash节点/Trojan节点/Singbox节点订阅节点">免费Clash|V2ray机场订阅 | 9月12日18.7M/S|免费SSR节点/V2ray节点/Shadowrocket节点/Clash节点/Trojan节点/Singbox节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-subscribe-node-2026-9-15.htm" title="免费Clash|V2ray机场订阅 | 9月15日20.6M/S|免费V2ray节点/SSR节点/Shadowrocket节点/Trojan节点/Clash节点/Singbox节点订阅节点">免费Clash|V2ray机场订阅 | 9月15日20.6M/S|免费V2ray节点/SSR节点/Shadowrocket节点/Trojan节点/Clash节点/Singbox节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/clash-windows-2026-8-13.htm" title="免费Clash|V2ray机场订阅 | 8月13日19.9M/S|免费V2ray节点/SSR节点/Trojan节点/Shadowrocket节点/Singbox节点/Clash节点订阅节点">免费Clash|V2ray机场订阅 | 8月13日19.9M/S|免费V2ray节点/SSR节点/Trojan节点/Shadowrocket节点/Singbox节点/Clash节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-clash-subscribe-2026-9-21.htm" title="免费Clash|V2ray机场订阅 | 9月21日21.3M/S|免费Singbox节点/Trojan节点/Shadowrocket节点/Clash节点/V2ray节点/SSR节点订阅节点">免费Clash|V2ray机场订阅 | 9月21日21.3M/S|免费Singbox节点/Trojan节点/Shadowrocket节点/Clash节点/V2ray节点/SSR节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-14-free-node-subscribe.htm" title="免费Clash|V2ray机场订阅 | 9月14日22.3M/S|免费Clash节点/Trojan节点/SSR节点/Singbox节点/V2ray节点/Shadowrocket节点订阅节点">免费Clash|V2ray机场订阅 | 9月14日22.3M/S|免费Clash节点/Trojan节点/SSR节点/Singbox节点/V2ray节点/Shadowrocket节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-10-4-clash-v2ray-ss-ssr.htm" title="免费Clash|V2ray机场订阅 | 10月4日18.5M/S|免费Trojan节点/Shadowrocket节点/Singbox节点/Clash节点/SSR节点/V2ray节点订阅节点">免费Clash|V2ray机场订阅 | 10月4日18.5M/S|免费Trojan节点/Shadowrocket节点/Singbox节点/Clash节点/SSR节点/V2ray节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-9-17.htm" title="免费Clash|V2ray机场订阅 | 9月17日20.7M/S|免费Singbox节点/SSR节点/Trojan节点/Clash节点/Shadowrocket节点/V2ray节点订阅节点">免费Clash|V2ray机场订阅 | 9月17日20.7M/S|免费Singbox节点/SSR节点/Trojan节点/Clash节点/Shadowrocket节点/V2ray节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-clash-subscribe-2026-9-23.htm" title="免费Clash|V2ray机场订阅 | 9月23日20.1M/S|免费Singbox节点/Trojan节点/V2ray节点/Clash节点/SSR节点/Shadowrocket节点订阅节点">免费Clash|V2ray机场订阅 | 9月23日20.1M/S|免费Singbox节点/Trojan节点/V2ray节点/Clash节点/SSR节点/Shadowrocket节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-24-clash-node-daily-updates.htm" title="免费Clash|V2ray机场订阅 | 9月24日21.1M/S|免费Trojan节点/Singbox节点/Clash节点/SSR节点/V2ray节点/Shadowrocket节点订阅节点">免费Clash|V2ray机场订阅 | 9月24日21.1M/S|免费Trojan节点/Singbox节点/Clash节点/SSR节点/V2ray节点/Shadowrocket节点订阅节点</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -490,10 +490,10 @@ A：在一些国家和地区使用此类工具有法律风险，请根据当地�
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">27</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
+                <h4><span class="badge" style="float: right;">4</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
             </li>
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">26</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
+                <h4><span class="badge" style="float: right;">29</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
             </li>
                     </ul>
     </div>
