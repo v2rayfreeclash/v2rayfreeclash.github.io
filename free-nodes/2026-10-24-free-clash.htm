@@ -260,9 +260,24 @@
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>VLESS Reality 模式与 XTLS 模式有何不同？</h5></div>
+    <div class="panel-heading"><h5>SSR 节点延迟高、丢包严重，常见排查步骤有哪些？</h5></div>
     <div class="panel-body">
-        VLESS Reality 通过伪造握手和真实网站的 TLS 指纹实现高仿真加密，而 XTLS 强调高性能传输。Reality 更注重隐蔽性，适合高安全需求环境；XTLS 则偏重传输效率。<hr />    </div>
+        先用 ping 和 traceroute 检查到服务器的延迟与路由跳数；再通过测速工具测带宽并尝试更换不同出站端口或混淆方式；若仍然不稳，考虑更换节点或联系客服查看服务端链路质量。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>如何把 Clash 规则与本地 hosts 文件结合使用？</h5></div>
+    <div class="panel-body">
+        可在 Clash 的 rules 中优先设置域名直连规则，并在系统 hosts 中添加常用站点的固定解析以加速 DNS 解析。注意 hosts 优先级高于 DNS，因此修改 hosts 需谨慎以避免与真实解析冲突。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Shadowrocket 的测速功能如何优化节点选择？</h5></div>
+    <div class="panel-body">
+        Shadowrocket 可测量节点延迟和丢包率，并根据结果排序策略组节点。延迟低的节点会优先使用，保证网页浏览、视频和游戏的速度和稳定性，提高整体网络体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Hiddify Next 支持 Reality 吗？</h5></div>
+    <div class="panel-body">
+        支持。Hiddify Next 基于 sing-box 内核，可加载 Vless+Reality、Trojan+TLS 等高级协议配置。用户可直接导入机场订阅，无需手动修改复杂参数。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Hiddify Next 的多机场订阅如何整合？</h5></div>
@@ -275,6 +290,16 @@
         支持。可通过 IP 段匹配将流量分流到指定节点。结合策略组，可实现国内直连、国外代理或游戏加速，实现精细化流量管理和优化网络访问。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>Potatso Lite 如何导入 URL 格式的订阅？</h5></div>
+    <div class="panel-body">
+        在 Potatso Lite 的配置页点击“导入”，粘贴订阅链接并确认导入。系统会自动解析节点列表，可在主界面查看并选择不同线路。部分机场支持一键导入格式，省去手动配置步骤。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>VLESS Reality 模式与 XTLS 模式有何不同？</h5></div>
+    <div class="panel-body">
+        VLESS Reality 通过伪造握手和真实网站的 TLS 指纹实现高仿真加密，而 XTLS 强调高性能传输。Reality 更注重隐蔽性，适合高安全需求环境；XTLS 则偏重传输效率。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>Clash 的规则订阅更新频率如何设置？</h5></div>
     <div class="panel-body">
         Clash 支持设置订阅规则的更新频率，例如每小时或每天。定期更新可保证节点和规则最新，减少手动维护，提高访问速度和分流效率，同时保持网络稳定性。<hr />    </div>
@@ -282,32 +307,7 @@
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Matsuri 的延迟测试准确吗？</h5></div>
     <div class="panel-body">
-        Matsuri 的延迟测试使用 ICMP 与 TCP 双重检测方式，可较准确反映节点实际响应时间。不过受网络波动影响，建议多次测试并结合速度测试结果综合判断。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Hiddify Next 支持 Reality 吗？</h5></div>
-    <div class="panel-body">
-        支持。Hiddify Next 基于 sing-box 内核，可加载 Vless+Reality、Trojan+TLS 等高级协议配置。用户可直接导入机场订阅，无需手动修改复杂参数。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Potatso Lite 如何导入 URL 格式的订阅？</h5></div>
-    <div class="panel-body">
-        在 Potatso Lite 的配置页点击“导入”，粘贴订阅链接并确认导入。系统会自动解析节点列表，可在主界面查看并选择不同线路。部分机场支持一键导入格式，省去手动配置步骤。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Shadowrocket 的测速功能如何优化节点选择？</h5></div>
-    <div class="panel-body">
-        Shadowrocket 可测量节点延迟和丢包率，并根据结果排序策略组节点。延迟低的节点会优先使用，保证网页浏览、视频和游戏的速度和稳定性，提高整体网络体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>SSR 节点延迟高、丢包严重，常见排查步骤有哪些？</h5></div>
-    <div class="panel-body">
-        先用 ping 和 traceroute 检查到服务器的延迟与路由跳数；再通过测速工具测带宽并尝试更换不同出站端口或混淆方式；若仍然不稳，考虑更换节点或联系客服查看服务端链路质量。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>如何把 Clash 规则与本地 hosts 文件结合使用？</h5></div>
-    <div class="panel-body">
-        可在 Clash 的 rules 中优先设置域名直连规则，并在系统 hosts 中添加常用站点的固定解析以加速 DNS 解析。注意 hosts 优先级高于 DNS，因此修改 hosts 需谨慎以避免与真实解析冲突。    </div>
+        Matsuri 的延迟测试使用 ICMP 与 TCP 双重检测方式，可较准确反映节点实际响应时间。不过受网络波动影响，建议多次测试并结合速度测试结果综合判断。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -355,16 +355,16 @@
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-9-18-clash-v2ray-ss-ssr.htm" title="免费Clash|V2ray机场订阅 | 9月18日22.3M/S|免费Shadowrocket节点/Singbox节点/Clash节点/Trojan节点/V2ray节点/SSR节点订阅节点">免费Clash|V2ray机场订阅 | 9月18日22.3M/S|免费Shadowrocket节点/Singbox节点/Clash节点/Trojan节点/V2ray节点/SSR节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-8-free-shadowrocket-node.htm" title="免费Clash|V2ray机场订阅 | 9月8日18.3M/S|免费V2ray节点/Shadowrocket节点/Trojan节点/SSR节点/Clash节点/Singbox节点订阅节点">免费Clash|V2ray机场订阅 | 9月8日18.3M/S|免费V2ray节点/Shadowrocket节点/Trojan节点/SSR节点/Clash节点/Singbox节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-12-clash-v2ray-ss-ssr.htm" title="免费Clash|V2ray机场订阅 | 9月12日18.7M/S|免费SSR节点/V2ray节点/Shadowrocket节点/Clash节点/Trojan节点/Singbox节点订阅节点">免费Clash|V2ray机场订阅 | 9月12日18.7M/S|免费SSR节点/V2ray节点/Shadowrocket节点/Clash节点/Trojan节点/Singbox节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/shadowrocket-node-2026-10-5.htm" title="免费Clash|V2ray机场订阅 | 10月5日21.4M/S|免费V2ray节点/SSR节点/Singbox节点/Clash节点/Shadowrocket节点/Trojan节点订阅节点">免费Clash|V2ray机场订阅 | 10月5日21.4M/S|免费V2ray节点/SSR节点/Singbox节点/Clash节点/Shadowrocket节点/Trojan节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-14-free-node-subscribe.htm" title="免费Clash|V2ray机场订阅 | 9月14日22.3M/S|免费Clash节点/Trojan节点/SSR节点/Singbox节点/V2ray节点/Shadowrocket节点订阅节点">免费Clash|V2ray机场订阅 | 9月14日22.3M/S|免费Clash节点/Trojan节点/SSR节点/Singbox节点/V2ray节点/Shadowrocket节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-28-free-v2ray.htm" title="免费Clash|V2ray机场订阅 | 9月28日22M/S|免费V2ray节点/Shadowrocket节点/SSR节点/Clash节点/Singbox节点/Trojan节点订阅节点">免费Clash|V2ray机场订阅 | 9月28日22M/S|免费V2ray节点/Shadowrocket节点/SSR节点/Clash节点/Singbox节点/Trojan节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-clash-subscribe-2026-9-9.htm" title="免费Clash|V2ray机场订阅 | 9月9日18.9M/S|免费Singbox节点/Clash节点/Shadowrocket节点/V2ray节点/SSR节点/Trojan节点订阅节点">免费Clash|V2ray机场订阅 | 9月9日18.9M/S|免费Singbox节点/Clash节点/Shadowrocket节点/V2ray节点/SSR节点/Trojan节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-high-speed-nodes-2026-9-27.htm" title="免费Clash|V2ray机场订阅 | 9月27日23M/S|免费Clash节点/Trojan节点/Singbox节点/V2ray节点/SSR节点/Shadowrocket节点订阅节点">免费Clash|V2ray机场订阅 | 9月27日23M/S|免费Clash节点/Trojan节点/Singbox节点/V2ray节点/SSR节点/Shadowrocket节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-9-17.htm" title="免费Clash|V2ray机场订阅 | 9月17日20.7M/S|免费Singbox节点/SSR节点/Trojan节点/Clash节点/Shadowrocket节点/V2ray节点订阅节点">免费Clash|V2ray机场订阅 | 9月17日20.7M/S|免费Singbox节点/SSR节点/Trojan节点/Clash节点/Shadowrocket节点/V2ray节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/shadowrocket-node-2026-10-23.htm" title="免费Clash|V2ray机场订阅 | 10月23日19.1M/S|免费SSR节点/Shadowrocket节点/V2ray节点/Clash节点/Singbox节点/Trojan节点订阅节点">免费Clash|V2ray机场订阅 | 10月23日19.1M/S|免费SSR节点/Shadowrocket节点/V2ray节点/Clash节点/Singbox节点/Trojan节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-10-6-clash-node.htm" title="免费Clash|V2ray机场订阅 | 10月6日21.1M/S|免费Singbox节点/Clash节点/Trojan节点/SSR节点/V2ray节点/Shadowrocket节点订阅节点">免费Clash|V2ray机场订阅 | 10月6日21.1M/S|免费Singbox节点/Clash节点/Trojan节点/SSR节点/V2ray节点/Shadowrocket节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-10-26-clash-node-daily-updates.htm" title="免费Clash|V2ray机场订阅 | 10月26日18.7M/S|免费Clash节点/Shadowrocket节点/SSR节点/Singbox节点/V2ray节点/Trojan节点订阅节点">免费Clash|V2ray机场订阅 | 10月26日18.7M/S|免费Clash节点/Shadowrocket节点/SSR节点/Singbox节点/V2ray节点/Trojan节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-10-30-clash-node.htm" title="免费Clash|V2ray机场订阅 | 10月30日22.9M/S|免费SSR节点/Clash节点/Trojan节点/V2ray节点/Singbox节点/Shadowrocket节点订阅节点">免费Clash|V2ray机场订阅 | 10月30日22.9M/S|免费SSR节点/Clash节点/Trojan节点/V2ray节点/Singbox节点/Shadowrocket节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-9-7.htm" title="免费Clash|V2ray机场订阅 | 9月7日20M/S|免费Clash节点/Trojan节点/SSR节点/V2ray节点/Singbox节点/Shadowrocket节点订阅节点">免费Clash|V2ray机场订阅 | 9月7日20M/S|免费Clash节点/Trojan节点/SSR节点/V2ray节点/Singbox节点/Shadowrocket节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-10-10-free-v2ray.htm" title="免费Clash|V2ray机场订阅 | 10月10日18.7M/S|免费SSR节点/Singbox节点/V2ray节点/Trojan节点/Clash节点/Shadowrocket节点订阅节点">免费Clash|V2ray机场订阅 | 10月10日18.7M/S|免费SSR节点/Singbox节点/V2ray节点/Trojan节点/Clash节点/Shadowrocket节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-10-18-node-share.htm" title="免费Clash|V2ray机场订阅 | 10月18日19.5M/S|免费Singbox节点/Shadowrocket节点/Clash节点/SSR节点/V2ray节点/Trojan节点订阅节点">免费Clash|V2ray机场订阅 | 10月18日19.5M/S|免费Singbox节点/Shadowrocket节点/Clash节点/SSR节点/V2ray节点/Trojan节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-clash-subscribe-2026-9-5.htm" title="免费Clash|V2ray机场订阅 | 9月5日19M/S|免费Shadowrocket节点/V2ray节点/Trojan节点/Singbox节点/Clash节点/SSR节点订阅节点">免费Clash|V2ray机场订阅 | 9月5日19M/S|免费Shadowrocket节点/V2ray节点/Trojan节点/Singbox节点/Clash节点/SSR节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-ssr-node-2026-10-11.htm" title="免费Clash|V2ray机场订阅 | 10月11日20.9M/S|免费Trojan节点/V2ray节点/Singbox节点/Shadowrocket节点/SSR节点/Clash节点订阅节点">免费Clash|V2ray机场订阅 | 10月11日20.9M/S|免费Trojan节点/V2ray节点/Singbox节点/Shadowrocket节点/SSR节点/Clash节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-9-19.htm" title="免费Clash|V2ray机场订阅 | 9月19日21.5M/S|免费Shadowrocket节点/V2ray节点/Trojan节点/Clash节点/Singbox节点/SSR节点订阅节点">免费Clash|V2ray机场订阅 | 9月19日21.5M/S|免费Shadowrocket节点/V2ray节点/Trojan节点/Clash节点/Singbox节点/SSR节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-v2ray-subscribe-2026-9-13.htm" title="免费Clash|V2ray机场订阅 | 9月13日18.3M/S|免费SSR节点/Clash节点/Singbox节点/Trojan节点/Shadowrocket节点/V2ray节点订阅节点">免费Clash|V2ray机场订阅 | 9月13日18.3M/S|免费SSR节点/Clash节点/Singbox节点/Trojan节点/Shadowrocket节点/V2ray节点订阅节点</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -376,7 +376,10 @@
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">25</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
+                <h4><span class="badge" style="float: right;">2</span> <a href="/date/2026-11/" title="2026-11 归档">2026-11</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">30</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">29</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
